@@ -1,16 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE web-app PUBLIC
- "-//Oracle Corporation//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Oracle Corporation//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
 
-<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee">
     <servlet>
-        <servlet-name>demo</servlet-name>
-        <servlet-class>myapp.DemoServlet</servlet-class>
+        <servlet-name>AloMundo</servlet-name>
+        <servlet-class>myapp.AloMundoServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>demo</servlet-name>
-        <url-pattern>/demo</url-pattern>
+        <servlet-name>AloMundo</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Somatorio</servlet-name>
+        <servlet-class>myapp.SomatorioServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Somatorio</servlet-name>
+        <url-pattern>/somatorio</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>MostraSomatorio</servlet-name>
+        <servlet-class>myapp.MostraSomatorioServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MostraSomatorio</servlet-name>
+        <url-pattern>/mostrasomatorio</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
